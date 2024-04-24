@@ -1,0 +1,34 @@
+job partal app
+we had addJob,home, succes, viewAllJobs views
+
+controller is handling multiple requests
+
+CONTROLLER AND SUMMARY:
+
+@GetMapping
+/ and /home
+
+@GetMapping
+addjob: returning addjob page
+
+@PostMapping
+handleForm
+sending data in the page which is stored in parameter
+we send that to the service, service talks to repo and adds
+this collection is getting created in repo
+
+in between client and repo we have service
+client talks to a controller, controller talks to service, service talks to a repo, repo talks to a database or a file or a server
+
+@GetMapping
+viewAllJobs
+fetch all jobs help of service
+and with the Model interface usage we were able to store filled form and pass that to the view, model.addAttribute("jobPosts",jPostList)
+
+DEPENDENCIES
+spring web, jakarta.servlet.jsp.jstl, glassfish.web, lombok, tomcat are used
+
+
+
+
+
